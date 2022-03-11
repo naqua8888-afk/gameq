@@ -291,7 +291,6 @@
   display: flex;
   height: 100%;
   flex-direction: column;
-  justify-content: space-between;
 }
 .projects__slide img {
   margin-bottom: 10px;

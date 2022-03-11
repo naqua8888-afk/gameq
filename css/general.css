@@ -324,7 +324,7 @@ blockquote .quoter {
   vertical-align: middle;
   padding: 0 20px;
   letter-spacing: 0;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 80px;
   z-index: 1;
@@ -465,6 +465,9 @@ footer {
   .nav-header.fold .nav-header__menu-wrap {
     display: flex;
   }
+}
+.projects__slide img {
+  height: 200px;
 }
 
 /*# sourceMappingURL=general.css.map */
