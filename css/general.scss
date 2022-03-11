@@ -232,6 +232,10 @@ blockquote {
     background-color: white;
     transition: 0.3s;
     box-shadow: 0 2px 5px rgb(16 16 16 / 8%);
+
+    .nav li a {
+      color: $default-dark !important;
+    }
   }
   .navbar {
     padding-top: 0;
@@ -254,7 +258,7 @@ blockquote {
     .nav {
       li a {
         font-family: "Work Sans", serif;
-        color: $default-dark;
+        color: #fff;
         text-transform: uppercase;
         display: inline-block;
         vertical-align: middle;
@@ -266,7 +270,7 @@ blockquote {
         z-index: 1;
         transition: 0.3s;
         &.active, &:hover {
-          color: $default-hover;
+          color: #fff;
           transition: 0.3s;
         }
       }

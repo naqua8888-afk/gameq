@@ -298,6 +298,9 @@ blockquote .quoter {
   transition: 0.3s;
   box-shadow: 0 2px 5px rgba(16, 16, 16, 0.08);
 }
+.nav-header.scrolled .nav li a {
+  color: #352c18 !important;
+}
 .nav-header .navbar {
   padding-top: 0;
   padding-bottom: 0;
@@ -315,7 +318,7 @@ blockquote .quoter {
 }
 .nav-header__menu .nav li a {
   font-family: "Work Sans", serif;
-  color: #352c18;
+  color: #fff;
   text-transform: uppercase;
   display: inline-block;
   vertical-align: middle;
@@ -328,7 +331,7 @@ blockquote .quoter {
   transition: 0.3s;
 }
 .nav-header__menu .nav li a.active, .nav-header__menu .nav li a:hover {
-  color: #6a5315;
+  color: #fff;
   transition: 0.3s;
 }
 .nav-header__menu-wrap {
