@@ -15,18 +15,31 @@
 <body>
 <nav class="nav-header">
     <div class="container navbar">
-        <a href="#" class="navbar-brand"><img src="images/logo-dark.png" alt="Logo"></a>
+        <a href="#" class="navbar-brand">
+            <svg width="36" height="52" viewBox="0 0 182 269" >
+
+                <g transform="translate(0.000000,269.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M260 2515 l0 -165 330 0 c196 0 349 -4 379 -11 71 -15 127 -59 157 -122 13 -29 24 -67 24 -86 0 -83 -48 -164 -123 -204 -41 -21 -52 -22 -404 -25 l-363 -4 0 -189 0 -189 368 0 c416 0 443 -4 514 -68 113 -102 116 -275 7 -379 -71 -68 -72 -68 -502 -71 l-387 -3 2 -177 3 -177 395 0 c442 0 452 1 590 68 243 118 382 402 326 667 -23 108 -83 223 -161 307 l-65 71 39 58 c58 88 82 164 88 274 15 261 -141 486 -390 565 -77 25 -82 25 -453 25 l-374 0 0 -165z"/>
+                    <path d="M10 179 l0 -179 95 0 c136 0 175 24 175 105 0 27 -8 44 -28 64 -27 27 -27 28 -10 57 22 38 12 80 -24 107 -21 16 -46 20 -117 23 l-91 3 0 -180z m162 87 c14 -21 -12 -46 -47 -46 -32 0 -35 3 -35 29 0 23 5 30 23 33 26 5 49 -2 59 -16z m16 -121 c15 -6 16 -47 0 -63 -7 -7 -31 -12 -55 -12 l-43 0 0 39 c0 23 5 41 13 44 13 4 65 0 85 -8z"/>
+                    <path d="M320 352 c0 -4 26 -84 57 -179 l58 -173 30 0 c30 0 32 3 69 106 44 121 35 124 91 -28 27 -75 29 -78 59 -78 l32 0 55 173 c31 94 55 174 53 177 -1 3 -20 4 -42 2 l-39 -4 -28 -89 c-16 -49 -32 -89 -35 -89 -4 0 -19 36 -34 79 -37 105 -45 116 -81 104 -23 -7 -33 -22 -57 -88 -16 -44 -33 -83 -37 -88 -4 -4 -20 33 -36 83 -16 49 -34 90 -39 91 -6 0 -26 2 -43 4 -18 2 -33 1 -33 -3z"/>
+                    <path d="M870 325 c0 -34 1 -35 40 -35 39 0 40 1 40 35 0 34 -1 35 -40 35 -39 0 -40 -1 -40 -35z"/>
+                    <path d="M1316 351 c-3 -4 20 -85 52 -179 l57 -172 30 0 c29 0 31 3 69 106 l39 107 40 -107 c39 -104 40 -106 71 -106 l32 0 55 175 c60 187 60 186 -2 177 -23 -3 -29 -14 -54 -93 -16 -49 -31 -89 -35 -89 -3 0 -20 40 -39 89 -31 86 -34 89 -66 93 l-34 4 -32 -88 c-17 -49 -35 -91 -40 -93 -4 -3 -20 35 -36 85 -18 61 -32 90 -43 91 -8 0 -25 2 -37 5 -12 2 -24 0 -27 -5z"/>
+                    <path d="M1140 263 c-8 -3 -23 -12 -32 -21 -16 -14 -18 -13 -18 1 0 13 -9 17 -40 17 l-40 0 0 -130 0 -130 40 0 40 0 0 84 c0 76 2 86 22 100 56 40 78 11 78 -103 l0 -81 40 0 40 0 0 85 c0 86 -14 139 -42 162 -18 16 -67 24 -88 16z"/>
+                    <path d="M870 130 l0 -130 40 0 40 0 0 130 0 130 -40 0 -40 0 0 -130z"/>
+                </g>
+            </svg>
+        </a>
         <button class="nav-header__menu_mobile button btn-rounded" onclick="toggleMenu()">
             <i class="fa-solid fa-bars"></i>
         </button>
         <div class="nav-header__menu-wrap">
             <div class="nav-header__menu">
                 <ul class="nav">
-                    <li><a class="nav-link active" href="home-01.html">Home</a></li>
+                    <li><a class="nav-link active" href="/">Home</a></li>
                     <li><a class="nav-link" href="#about">About us</a></li>
                     <li><a class="nav-link" href="#stack">Stack</a></li>
-                    <li><a class="nav-link" href="#projects">Our projects</a></li>
-                    <li><a class="nav-link" href="page-01.html">Page</a></li>
+                    <li><a class="nav-link" href="#projects">Our services</a></li>
+                    <li><a class="nav-link" href="page-01.html" target="_blank">Page</a></li>
                     <li><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -78,44 +91,49 @@
         <div class="row footer__padding">
             <div class="col-lg-6 col-sm-6 sm-padding">
                 <div class="footer-content">
-                    <a href="#"><img src="images/logo-light.png" alt="logo light"></a>
-                    <p>Building your own home is about desire, fantasy. But it’s achievable anyone can do it.
-                        Your own home is about desire. But it’s achievable anyone can do it.</p>
-                    <ul class="footer-social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
+                    <a href="#">
+                        <h2>
+                            <svg width="36" height="52" viewBox="0 0 182 269" >
+
+                                <g transform="translate(0.000000,269.000000) scale(0.100000,-0.100000)" fill="#fcf9f3" stroke="none">
+                                    <path d="M260 2515 l0 -165 330 0 c196 0 349 -4 379 -11 71 -15 127 -59 157 -122 13 -29 24 -67 24 -86 0 -83 -48 -164 -123 -204 -41 -21 -52 -22 -404 -25 l-363 -4 0 -189 0 -189 368 0 c416 0 443 -4 514 -68 113 -102 116 -275 7 -379 -71 -68 -72 -68 -502 -71 l-387 -3 2 -177 3 -177 395 0 c442 0 452 1 590 68 243 118 382 402 326 667 -23 108 -83 223 -161 307 l-65 71 39 58 c58 88 82 164 88 274 15 261 -141 486 -390 565 -77 25 -82 25 -453 25 l-374 0 0 -165z"/>
+                                    <path d="M10 179 l0 -179 95 0 c136 0 175 24 175 105 0 27 -8 44 -28 64 -27 27 -27 28 -10 57 22 38 12 80 -24 107 -21 16 -46 20 -117 23 l-91 3 0 -180z m162 87 c14 -21 -12 -46 -47 -46 -32 0 -35 3 -35 29 0 23 5 30 23 33 26 5 49 -2 59 -16z m16 -121 c15 -6 16 -47 0 -63 -7 -7 -31 -12 -55 -12 l-43 0 0 39 c0 23 5 41 13 44 13 4 65 0 85 -8z"/>
+                                    <path d="M320 352 c0 -4 26 -84 57 -179 l58 -173 30 0 c30 0 32 3 69 106 44 121 35 124 91 -28 27 -75 29 -78 59 -78 l32 0 55 173 c31 94 55 174 53 177 -1 3 -20 4 -42 2 l-39 -4 -28 -89 c-16 -49 -32 -89 -35 -89 -4 0 -19 36 -34 79 -37 105 -45 116 -81 104 -23 -7 -33 -22 -57 -88 -16 -44 -33 -83 -37 -88 -4 -4 -20 33 -36 83 -16 49 -34 90 -39 91 -6 0 -26 2 -43 4 -18 2 -33 1 -33 -3z"/>
+                                    <path d="M870 325 c0 -34 1 -35 40 -35 39 0 40 1 40 35 0 34 -1 35 -40 35 -39 0 -40 -1 -40 -35z"/>
+                                    <path d="M1316 351 c-3 -4 20 -85 52 -179 l57 -172 30 0 c29 0 31 3 69 106 l39 107 40 -107 c39 -104 40 -106 71 -106 l32 0 55 175 c60 187 60 186 -2 177 -23 -3 -29 -14 -54 -93 -16 -49 -31 -89 -35 -89 -3 0 -20 40 -39 89 -31 86 -34 89 -66 93 l-34 4 -32 -88 c-17 -49 -35 -91 -40 -93 -4 -3 -20 35 -36 85 -18 61 -32 90 -43 91 -8 0 -25 2 -37 5 -12 2 -24 0 -27 -5z"/>
+                                    <path d="M1140 263 c-8 -3 -23 -12 -32 -21 -16 -14 -18 -13 -18 1 0 13 -9 17 -40 17 l-40 0 0 -130 0 -130 40 0 40 0 0 84 c0 76 2 86 22 100 56 40 78 11 78 -103 l0 -81 40 0 40 0 0 85 c0 86 -14 139 -42 162 -18 16 -67 24 -88 16z"/>
+                                    <path d="M870 130 l0 -130 40 0 40 0 0 130 0 130 -40 0 -40 0 0 -130z"/>
+                                </g>
+                            </svg>
+                        </h2>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-2 col-sm-6 sm-padding">
                 <div class="footer-content">
                     <h4>Company</h4>
                     <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="features.html">Our Services</a></li>
-                        <li><a href="#">Clients Reviews</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#stack">Stack</a></li>
+                        <li><a href="#projects">Our Services</a></li>
+                        <li><a href="page-01.html">Page</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 sm-padding">
                 <div class="footer-content">
                     <h4>Headquaters</h4>
-                    <p>962 Fifth Avenue, 3rd Floor New York, NY10022</p>
-                    <span>Hello@dynamiclayers.net</span>
-                    <span>(+123) 456 789 101</span>
+                    <p>Rävala pst 4 10145 Tallinn, Harju County, Estonia</p>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© <span id="currentYear">2022</span> Truno Powered by DynamicLayers</p>
+            <p>© <span id="currentYear">2022</span> BWinW</p>
         </div>
     </div>
 </footer>
 <script src="js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
 <script>
