@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link href="fonts/fontawesome/css/all.css" rel="stylesheet" type="text/css">
+
+    <link href="css/general.css" rel="stylesheet" type="text/css">
+    <link href="css/page_styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<nav class="nav-header">
+    <div class="container navbar">
+        <a href="#" class="navbar-brand"><img src="images/logo-dark.png" alt="Logo"></a>
+        <button class="nav-header__menu_mobile button btn-rounded" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-header__menu-wrap">
+            <div class="nav-header__menu">
+                <ul class="nav">
+                    <li><a class="nav-link active" href="home-01.html">Home</a></li>
+                    <li><a class="nav-link" href="#about">About us</a></li>
+                    <li><a class="nav-link" href="#stack">Stack</a></li>
+                    <li><a class="nav-link" href="#projects">Our projects</a></li>
+                    <li><a class="nav-link" href="page-01.html">Page</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <a class="button btn-rounded" href="#">Get Started</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="page">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+        </nav>
+        <div class="page__wrap">
+            <div class="page__image">
+                <img src="images/post-4.jpg" alt="img">
+            </div>
+            <div class="page__content section-heading">
+                <h2>Minimalist trending in modern architecture 2019</h2>
+                <ul class="page__content_meta">
+                    <li><i class="fa fa-user"></i> <a href="#">Admin</a></li>
+                    <li><i class="fa fa-calendar"></i> <a href="#">19 Feb, 2019</a></li>
+                    <li><i class="fa fa-comments"></i> <a href="#">2 Comments</a></li>
+                </ul>
+                <p>Architectural phenomenology is a movement within architecture that began in the 1950s, reaching a wide audience in the late 1970s and 1980s, and continuing until today. Architectural phenomenology focuses on human experience, background, intention and historical reflection, interpretation as well as poetic and ethical considerations with authors such as Gaston Bachelard.[21]</p>
+                <p>Islamic architecture began in the 7th century CE, incorporating architectural forms from the ancient Middle East and Byzantium, but also developing features to suit the religious and social needs of the society. Examples can be found throughout the Middle East, North Africa, Spain and the Indian Sub-continent.</p>
+                <blockquote>
+                    <p>“Architecture is really about well-being. I think that people want to feel good in a space… On the one hand it’s about shelter, but it’s also about pleasure.”</p>
+                    <span class="quoter">- Dr. Anders Ericsson</span>
+                </blockquote>
+                <p>The most important aspect of beauty was, therefore, an inherent part of an object, rather than something applied superficially, and was based on universal, recognisable truths. The notion of style in the arts was not developed until the 16th century, with the writing of Vasari:[11] by the 18th century, his Lives of the Most Excellent Painters, Sculptors, and Architects had been translated into Italian, French, Spanish, and English.</p>
+            </div>
+            <ul class="pagination-wrap text-left mt-30">
+                <li><a href="#"><i class="fa-solid fa-arrow-left"></i></a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#" class="active">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-right"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row footer__padding">
+            <div class="col-lg-6 col-sm-6 sm-padding">
+                <div class="footer-content">
+                    <a href="#"><img src="images/logo-light.png" alt="logo light"></a>
+                    <p>Building your own home is about desire, fantasy. But it’s achievable anyone can do it.
+                        Your own home is about desire. But it’s achievable anyone can do it.</p>
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 sm-padding">
+                <div class="footer-content">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="features.html">Our Services</a></li>
+                        <li><a href="#">Clients Reviews</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 sm-padding">
+                <div class="footer-content">
+                    <h4>Headquaters</h4>
+                    <p>962 Fifth Avenue, 3rd Floor New York, NY10022</p>
+                    <span>Hello@dynamiclayers.net</span>
+                    <span>(+123) 456 789 101</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="currentYear">2022</span> Truno Powered by DynamicLayers</p>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+</script>
+</body>
+</html>

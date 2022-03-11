@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link href="fonts/fontawesome/css/all.css" rel="stylesheet" type="text/css">
+
+    <link href="css/general.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<nav class="nav-header">
+    <div class="container navbar">
+        <a href="#" class="navbar-brand">
+            <svg width="36" height="52" viewBox="0 0 182 269" >
+
+                <g transform="translate(0.000000,269.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M260 2515 l0 -165 330 0 c196 0 349 -4 379 -11 71 -15 127 -59 157 -122 13 -29 24 -67 24 -86 0 -83 -48 -164 -123 -204 -41 -21 -52 -22 -404 -25 l-363 -4 0 -189 0 -189 368 0 c416 0 443 -4 514 -68 113 -102 116 -275 7 -379 -71 -68 -72 -68 -502 -71 l-387 -3 2 -177 3 -177 395 0 c442 0 452 1 590 68 243 118 382 402 326 667 -23 108 -83 223 -161 307 l-65 71 39 58 c58 88 82 164 88 274 15 261 -141 486 -390 565 -77 25 -82 25 -453 25 l-374 0 0 -165z"/>
+                    <path d="M10 179 l0 -179 95 0 c136 0 175 24 175 105 0 27 -8 44 -28 64 -27 27 -27 28 -10 57 22 38 12 80 -24 107 -21 16 -46 20 -117 23 l-91 3 0 -180z m162 87 c14 -21 -12 -46 -47 -46 -32 0 -35 3 -35 29 0 23 5 30 23 33 26 5 49 -2 59 -16z m16 -121 c15 -6 16 -47 0 -63 -7 -7 -31 -12 -55 -12 l-43 0 0 39 c0 23 5 41 13 44 13 4 65 0 85 -8z"/>
+                    <path d="M320 352 c0 -4 26 -84 57 -179 l58 -173 30 0 c30 0 32 3 69 106 44 121 35 124 91 -28 27 -75 29 -78 59 -78 l32 0 55 173 c31 94 55 174 53 177 -1 3 -20 4 -42 2 l-39 -4 -28 -89 c-16 -49 -32 -89 -35 -89 -4 0 -19 36 -34 79 -37 105 -45 116 -81 104 -23 -7 -33 -22 -57 -88 -16 -44 -33 -83 -37 -88 -4 -4 -20 33 -36 83 -16 49 -34 90 -39 91 -6 0 -26 2 -43 4 -18 2 -33 1 -33 -3z"/>
+                    <path d="M870 325 c0 -34 1 -35 40 -35 39 0 40 1 40 35 0 34 -1 35 -40 35 -39 0 -40 -1 -40 -35z"/>
+                    <path d="M1316 351 c-3 -4 20 -85 52 -179 l57 -172 30 0 c29 0 31 3 69 106 l39 107 40 -107 c39 -104 40 -106 71 -106 l32 0 55 175 c60 187 60 186 -2 177 -23 -3 -29 -14 -54 -93 -16 -49 -31 -89 -35 -89 -3 0 -20 40 -39 89 -31 86 -34 89 -66 93 l-34 4 -32 -88 c-17 -49 -35 -91 -40 -93 -4 -3 -20 35 -36 85 -18 61 -32 90 -43 91 -8 0 -25 2 -37 5 -12 2 -24 0 -27 -5z"/>
+                    <path d="M1140 263 c-8 -3 -23 -12 -32 -21 -16 -14 -18 -13 -18 1 0 13 -9 17 -40 17 l-40 0 0 -130 0 -130 40 0 40 0 0 84 c0 76 2 86 22 100 56 40 78 11 78 -103 l0 -81 40 0 40 0 0 85 c0 86 -14 139 -42 162 -18 16 -67 24 -88 16z"/>
+                    <path d="M870 130 l0 -130 40 0 40 0 0 130 0 130 -40 0 -40 0 0 -130z"/>
+                </g>
+            </svg>
+        </a>
+        <button class="nav-header__menu_mobile button btn-rounded" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-header__menu-wrap">
+            <div class="nav-header__menu">
+                <ul class="nav">
+                    <li><a class="nav-link active" href="home-01.html">Home</a></li>
+                    <li><a class="nav-link" href="#about">About us</a></li>
+                    <li><a class="nav-link" href="#stack">Stack</a></li>
+                    <li><a class="nav-link" href="#projects">Our services</a></li>
+                    <li><a class="nav-link" href="page-01.html" target="_blank">Page</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <a class="button btn-rounded" href="#">Get Started</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="head-sct" id="home">
+    <div class="homestage">
+        <div class="homestage__slide">
+            <img src="https://picsum.photos/id/436/2000" alt="">
+            <div class="homestage__content">
+                <div class="section-heading">
+                    <h2>Our projects</h2>
+                    <p>Make your awesome business idea a reality with Truno. From spaces that prioritise health and safety to terms with unmatched flexibility, Addkit is reimagining the workplace.</p>
+                    <a class="button btn-rounded" href="#">view page</a>
+                </div>
+            </div>
+        </div>
+        <div class="homestage__slide"><img src="https://picsum.photos/id/954/2000" alt=""></div>
+        <div class="homestage__slide">
+            <img src="https://picsum.photos/id/764/2000" alt="">
+            <div class="homestage__content">
+                <div class="section-heading">
+                    <h2>Our services</h2>
+                    <a class="button btn-rounded" href="#">view page</a>
+                </div>
+            </div>
+        </div>
+        <div class="homestage__slide"><img src="https://picsum.photos/id/939/2000" alt=""></div>
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="container">
+        <div class="d-flex align-items-center row mb-5">
+            <div class="col-lg-6 sm-padding">
+                <img src="images/SUITE.png" alt="">
+            </div>
+            <div class="col-lg-6 sm-padding">
+                <div class="section-heading">
+                    <h4 class="headline-blue">About us</h4>
+                    <h2>BWinW - YOUR SOFTWARE ENGINEERING TEAM</h2>
+                    <p>Do you have a business idea and do not know how to implement it into life?
+                    </p>
+                    <p>
+                        BWinW a team of result-oriented, competitive and well-cooperated developers who create outstanding solutions for your business that facilitate human work and optimize the whole business itself.
+                        We provide a full range of outsourcing services starting from the initial idea and formation of the working strategy to the final product and its further support. Our mission is to give the most effective digital solution for your business. We use modern and up-to-date practices and approaches.
+                    </p>
+                    <p>
+                        Our customers are businesses of different sizes from single entrepreneurs to huge companies with thousands of employees from all over the world. We find individual effective approaches to every client in order to achieve the best results.
+                    </p>
+                    <a href="#" class="button btn-filled">See more</a>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center row mb-5">
+            <div class="col-lg-6 sm-padding">
+                <div class="section-heading">
+                    <h4 class="headline-blue">About us</h4>
+                    <h2>Why we are different </h2>
+                    <p>BWinW is a unique company because we are bringing a new generation of Remote Team Extension on the market - we've created one of the biggest Ukrainian Software Engineers Database and set up all necessary support for remote work with our clients - office spaces, recruiting, hiring, management, administrative, infrastructure, etc. The result of this model is fast, qualified developers search and taking on board for the best prices on the market.</p>
+                    <a href="#" class="button btn-filled">See more</a>
+                </div>
+            </div>
+            <div class="col-lg-6 sm-padding">
+                <img src="images/SUITE.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="stack" id="stack">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 sm-padding">
+                <a href="#" class="stack__item section-heading theme-red">
+                    <div class="stack__icon_wrap">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <h3 class="color-red">JavaScript</h3>
+                    <p>JavaScript is one of the most popular programming languages in the world. It is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. It has dynamic typing, prototype-based object-orientation, and first-class functions. It is used to create interactive web pages, mobile applications, in server development.</p>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 sm-padding">
+                <a href="#" class="stack__item section-heading theme-blue">
+                    <div class="stack__icon_wrap">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <h3 class="color-blue">React Native</h3>
+                    <p>React Native is an open-source UI software framework. It is used to develop applications for Android, Android TV,  iOS, macOS, tvOS, Web, by enabling developers to use the React framework along with native platform capabilities.</p>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 sm-padding">
+                <a href="#" class="stack__item section-heading theme-green">
+                    <div class="stack__icon_wrap">
+                        <!--                    <i class="fa-brands fa-php"></i>-->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                            <g><path d="M688.5,452.3h-27.8l-21.8,81.5h20c21.5,0,37.9-4.1,48.7-12.1c10.9-8.1,18-18.6,21.6-32.1c3.4-12.6,2.2-21.7-3.5-27.7C719.7,455.6,706.9,452.3,688.5,452.3z"/><path d="M349.3,452.3h-27.8l-21.8,81.5h20c21.5,0,37.9-4.1,48.7-12.1c10.9-8.1,18-18.6,21.6-32.1c3.4-12.6,2.2-21.7-3.5-27.7C380.5,455.6,367.6,452.3,349.3,452.3z"/><path d="M500,241.6C229.4,241.6,10,357.3,10,500c0,142.7,219.4,258.4,490,258.4c270.6,0,490-115.7,490-258.4C990,357.3,770.6,241.6,500,241.6z M391.7,548c-19.9,14.3-44.4,21.5-73,21.5h-28.5L267.2,655h-40.5l63.9-238.5h67.1c31.3,0,52.3,6.7,64.3,20.5c12,13.8,15.1,32.3,9,55C424.9,514.8,411.7,533.7,391.7,548z M557.4,463.3c-1.9-3.5-15-7.6-29-7.6l-36.8,0L457.2,584h-39l66.6-248.5h39L501.3,419c10.6-0.1,29.4-0.3,42.7-0.3c19,0,41.9,6,49.9,19.4c7.4,12.4,8.2,29.9,2.2,52.2L571,584h-39l21.8-81.2C561,476,559.1,466.5,557.4,463.3z M770.2,492c-6.1,22.8-19.3,41.7-39.3,56c-19.9,14.3-44.4,21.5-73,21.5h-28.5L606.4,655h-40.5l63.9-238.5H697c31.3,0,52.3,6.7,64.3,20.5C773.3,450.8,776.3,469.3,770.2,492z"/></g>
+                        </svg>
+                    </div>
+                    <h3 class="color-green">PHP</h3>
+                    <p>PHP is a general-purpose scripting programming language geared towards web development. As of March 2021, PHP was used as the server-side programming language on 79.1% of az, down from 83.5% previously, where the language could be determined, and PHP 7 is the most used version of the language with 50.3% of all websites on the web are using that version.</p>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 sm-padding">
+                <a href="#" class="stack__item section-heading theme-yellow">
+                    <div class="stack__icon_wrap">
+                        <i class="fa-brands fa-node"></i>
+                    </div>
+                    <h3 class="color-yellow">Node JS</h3>
+                    <p>Node.js is an open source server environment that allows the creation of Web servers and networking tools using JavaScript and a collection of "modules" that handle various core functionalities.</p>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 sm-padding">
+                <a href="#" class="stack__item section-heading theme-purple">
+                    <div class="stack__icon_wrap">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <h3 class="color-orange">React</h3>
+                    <p>React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. React can be used as a base in the development of single-page, mobile, or server-rendered applications with frameworks like Next.js.</p>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 sm-padding">
+                <a href="#" class="stack__item section-heading theme-orange">
+                    <div class="stack__icon_wrap">
+                        <i class="fa-brands fa-vuejs"></i>
+                    </div>
+                    <h3 class="color-purple">Vue</h3>
+                    <p>Vue.js - the Progressive JavaScript Framework. An approachable, performant and versatile framework for building web user interfaces. Vue.js allows for extending HTML with HTML attributes</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="projects" id="projects">
+    <div class="container">
+        <div class="col-lg-6 sm-padding section-heading">
+            <h2>Our services</h2>
+            <p>Make your awesome business idea a reality with Truno</p>
+        </div>
+        <div class="projects__slides">
+            <div class="projects__slide">
+                <a href="#">
+                    <img src="images/post-1.jpg" alt="slide image">
+                    <div class="section-heading text-center">
+                        <h3>Dedicated Team for your projects</h3>
+                        <p>Our team consists of versatile developers including project managers, team lead, full-stack developers, designers, DevOps, QA testers.</p>
+                    </div>
+                    <button class="button btn-glued">See more</button>
+
+                </a>
+            </div>
+            <div class="projects__slide">
+                <a href="#">
+                    <img src="images/post-2.jpg" alt="slide image">
+                    <div class="section-heading text-center">
+                        <h3>Outsourcing solutions</h3>
+                        <p>Our specialists will accompany you throughout the entire cooperation process. We will cover the all the stages of development including providing our fresh ideas and suggestions, planning the roadmap, development itself and support of the already existing website.</p>
+                    </div>
+                    <button class="button btn-glued">See more</button>
+                </a>
+            </div>
+            <div class="projects__slide">
+                <a href="#">
+                    <img src="images/post-3.jpg" alt="slide image">
+                    <div class="section-heading text-center">
+                        <h3>Solution Architecture</h3>
+                        <p>All our team members enjoy being involved to the project discussion to find the best and individual solution for every customer. We will provide you with our creative and innovative view at ordinary things to make them more attractive and useful.</p>
+                    </div>
+                    <button class="button btn-glued">See more</button>
+                </a>
+            </div>
+            <div class="projects__slide">
+                <a href="#">
+                    <img src="images/post-4.jpg" alt="slide image">
+                    <div class="section-heading text-center">
+                        <h3>Team formation / outstaff</h3>
+                        <p>Team formation / outstaff - we also work on the outstaff model. Our developers  are easy-going and communicative. They can easily find a common language and work in international teams of different sizes. Feel free to contact us in case you need any support to your tech team.</p>
+                    </div>
+                    <button class="button btn-glued">See more</button>
+                </a>
+            </div>
+            <div class="projects__slide">
+                <a href="#">
+                    <img src="images/post-5.jpg" alt="slide image">
+                    <div class="section-heading text-center">
+                        <h3>Web Development </h3>
+                        <p>Is one of the main part of our work. We do both develop websites from scratch and provide particular functionality to already existing projects. We have advanced knowledge in developing scopes, keeping project moving submitting deliverables on time and ensuring a seamless experience for all parties involved.</p>
+                    </div>
+                    <button class="button btn-glued">See more</button>
+                </a>
+            </div>
+            <div class="projects__slide">
+                <a href="#">
+                    <img src="images/post-6.jpg" alt="slide image">
+                    <div class="section-heading text-center">
+                        <h3>Software Testing</h3>
+                        <p>We provide QAs who help customers solve their software quality problems. We test the quality in three environments: dev > stage > production. That helps to recognize issues that aren't visible in the initial stage of development, however, appear later.</p>
+                    </div>
+                    <button class="button btn-glued">See more</button>
+                </a>
+            </div>
+            <div class="projects__slide">
+                <a href="#">
+                    <img src="images/post-6.jpg" alt="slide image">
+                    <div class="section-heading text-center">
+                        <h3>UI/UX Design</h3>
+                        <p>We provide a full range of UI / UX design services, starting from design research to high-quality prototyping for your product.
+                        </p>
+                    </div>
+                    <button class="button btn-glued">See more</button>
+                </a>
+            </div>
+            <div class="projects__slide">
+                <a href="#">
+                    <img src="images/post-6.jpg" alt="slide image">
+                    <div class="section-heading text-center">
+                        <h3>Business and Products Analysis</h3>
+                        <p>Our specialists will help you determine the costs involved in your proposed new project development, and forecast the profits you may make from the product in future financial years. Besides, we also help you eliminate inappropriate ideas, choose the most approppriate technologies and avoid unnecessary costs.</p>
+                    </div>
+                    <button class="button btn-glued">See more</button>
+                </a>
+            </div>
+            <div class="projects__slide">
+                <a href="#">
+                    <img src="images/post-6.jpg" alt="slide image">
+                    <div class="section-heading text-center">
+                        <h3>Technical Communication & Support</h3>
+                        <p>In addition to qualified tech support you will recieve a high communication with our managers and developers as well. We make daily calls to control all the steps of development and discuss new ideas and plans. </p>
+                    </div>
+                    <button class="button btn-glued">See more</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-wrap d-flex row">
+            <div class="col-lg-6 sm-padding">
+                <div class="contact__info">
+                    <h2>Get in touch with us &
+                        send us message today!</h2>
+                    <ul class="footer-social">
+                        <li><a href="https://www.facebook.com/BWinW-O%C3%9C-109179318389590/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/bwinw-ou/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 sm-padding">
+                <div class="contact__form">
+                    <form class="form-horizontal">
+                        <div class="colum-row row">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control form-group" placeholder="Name" required="">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control form-group" placeholder="Email" required="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <textarea cols="30" rows="5" class="form-control message" placeholder="Message" required=""></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <button id="submit" class="button btn-filled" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row footer__padding">
+            <div class="col-lg-6 col-sm-6 sm-padding">
+                <div class="footer-content">
+                    <a href="#">
+                        <h2>
+                            <svg width="36" height="52" viewBox="0 0 182 269" >
+
+                                <g transform="translate(0.000000,269.000000) scale(0.100000,-0.100000)" fill="#fcf9f3" stroke="none">
+                                    <path d="M260 2515 l0 -165 330 0 c196 0 349 -4 379 -11 71 -15 127 -59 157 -122 13 -29 24 -67 24 -86 0 -83 -48 -164 -123 -204 -41 -21 -52 -22 -404 -25 l-363 -4 0 -189 0 -189 368 0 c416 0 443 -4 514 -68 113 -102 116 -275 7 -379 -71 -68 -72 -68 -502 -71 l-387 -3 2 -177 3 -177 395 0 c442 0 452 1 590 68 243 118 382 402 326 667 -23 108 -83 223 -161 307 l-65 71 39 58 c58 88 82 164 88 274 15 261 -141 486 -390 565 -77 25 -82 25 -453 25 l-374 0 0 -165z"/>
+                                    <path d="M10 179 l0 -179 95 0 c136 0 175 24 175 105 0 27 -8 44 -28 64 -27 27 -27 28 -10 57 22 38 12 80 -24 107 -21 16 -46 20 -117 23 l-91 3 0 -180z m162 87 c14 -21 -12 -46 -47 -46 -32 0 -35 3 -35 29 0 23 5 30 23 33 26 5 49 -2 59 -16z m16 -121 c15 -6 16 -47 0 -63 -7 -7 -31 -12 -55 -12 l-43 0 0 39 c0 23 5 41 13 44 13 4 65 0 85 -8z"/>
+                                    <path d="M320 352 c0 -4 26 -84 57 -179 l58 -173 30 0 c30 0 32 3 69 106 44 121 35 124 91 -28 27 -75 29 -78 59 -78 l32 0 55 173 c31 94 55 174 53 177 -1 3 -20 4 -42 2 l-39 -4 -28 -89 c-16 -49 -32 -89 -35 -89 -4 0 -19 36 -34 79 -37 105 -45 116 -81 104 -23 -7 -33 -22 -57 -88 -16 -44 -33 -83 -37 -88 -4 -4 -20 33 -36 83 -16 49 -34 90 -39 91 -6 0 -26 2 -43 4 -18 2 -33 1 -33 -3z"/>
+                                    <path d="M870 325 c0 -34 1 -35 40 -35 39 0 40 1 40 35 0 34 -1 35 -40 35 -39 0 -40 -1 -40 -35z"/>
+                                    <path d="M1316 351 c-3 -4 20 -85 52 -179 l57 -172 30 0 c29 0 31 3 69 106 l39 107 40 -107 c39 -104 40 -106 71 -106 l32 0 55 175 c60 187 60 186 -2 177 -23 -3 -29 -14 -54 -93 -16 -49 -31 -89 -35 -89 -3 0 -20 40 -39 89 -31 86 -34 89 -66 93 l-34 4 -32 -88 c-17 -49 -35 -91 -40 -93 -4 -3 -20 35 -36 85 -18 61 -32 90 -43 91 -8 0 -25 2 -37 5 -12 2 -24 0 -27 -5z"/>
+                                    <path d="M1140 263 c-8 -3 -23 -12 -32 -21 -16 -14 -18 -13 -18 1 0 13 -9 17 -40 17 l-40 0 0 -130 0 -130 40 0 40 0 0 84 c0 76 2 86 22 100 56 40 78 11 78 -103 l0 -81 40 0 40 0 0 85 c0 86 -14 139 -42 162 -18 16 -67 24 -88 16z"/>
+                                    <path d="M870 130 l0 -130 40 0 40 0 0 130 0 130 -40 0 -40 0 0 -130z"/>
+                                </g>
+                            </svg>
+                        </h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 sm-padding">
+                <div class="footer-content">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#stack">Stack</a></li>
+                        <li><a href="#projects">Our Services</a></li>
+                        <li><a href="page-01.html">Page</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 sm-padding">
+                <div class="footer-content">
+                    <h4>Headquaters</h4>
+                    <p>Rävala pst 4 10145 Tallinn, Harju County, Estonia</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="currentYear">2022</span> BWinW</p>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.homestage').slick({
+            dots: true,
+            autoplay: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                    }
+                },
+            ]
+        });
+    });
+    $('.projects__slides').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        adaptiveHeight: false,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
+</script>
+</body>
+</html>

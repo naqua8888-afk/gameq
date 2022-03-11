@@ -1,0 +1,93 @@
+$white: #ffffff;
+$default: #645731;
+$default-hover: #6a5315;
+$default-dark: #352c18;
+$default-dark-1: #867956;
+$default-light: #cbb986;
+$light-grey: #fcf9f3;
+$light-grey-1: #eee;
+$light-grey-2: #d2d2d2;
+$mixed-grey: #515252;
+$dark-grey: #495057;
+
+$theme-red: #ff4c4c;
+$theme-red-light: rgba(255, 76, 76,0.1);
+$theme-blue: #0099e5;
+$theme-blue-light: rgba(0, 153, 229,0.1);
+$theme-green: #36bca1;
+$theme-green-light: rgba(10, 191, 83,0.1);
+$theme-yellow: #ffdd00;
+$theme-yellow-light: rgba(255, 221, 0,0.2);
+$theme-purple: #a560e8;
+$theme-purple-light: rgba(165, 96, 232,0.1);
+$theme-orange: #f76b1c;
+$theme-orange-light: rgba(255, 121, 0,0.1);
+
+
+@font-face{
+  font-family: 'Work Sans';
+  src: url('../fonts/worksans/WorkSans-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Work Sans';
+  src: url('../fonts/worksans/WorkSans-Thin.otf');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Work Sans';
+  src: url('../fonts/worksans/WorkSans-ExtraLight.otf');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Work Sans';
+  src: url('../fonts/worksans/WorkSans-Light.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Work Sans';
+  src: url('../fonts/worksans/WorkSans-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Work Sans';
+  src: url('../fonts/worksans/WorkSans-SemiBold.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Work Sans';
+  src: url('../fonts/worksans/WorkSans-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Work Sans';
+  src: url('../fonts/worksans/WorkSans-ExtraBold.otf');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Work Sans';
+  src: url('../fonts/worksans/WorkSans-Black.otf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Poppins';
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Poppins';
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}

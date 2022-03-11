@@ -1,0 +1,323 @@
+@import "variables";
+
+
+.head-sct {
+  background-image: url("../images/hero-bg-1.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+.homestage {
+  height: 100%;
+  .slick-list {
+    height: 100%;
+  }
+  &__slide {
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .slick-track {
+    height: 100%;
+  }
+  &__content {
+    position: absolute;
+    width: inherit;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    //background-color: rgb(100 87 49 / 40%);
+    h2 {
+      //color: white;
+      margin-bottom: 20px;
+    }
+    p {
+      max-width: 700px;
+      font-size: 16px;
+      color: $default-dark;
+      //color: white;
+    }
+    .button {
+      margin-top: 20px;
+    }
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: calc(50% - 20px);
+  padding: 0;
+  font-size: 0;
+  border: none;
+  background-color: rgba(255,255,255, 0.3);
+  z-index: 1;
+  outline: none;
+  width: 40px;
+  border-radius: 50%;
+  transition: 0.2s;
+  &:hover {
+    background-color: $default;
+    &:before {
+      color: $white;
+    }
+  }
+  &:before {
+    font-family: 'Font Awesome 6 Free', serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: $default-dark;
+    transition: 0.2s;
+  }
+  &.slick-prev {
+    left: 20px;
+    &:before {
+      content: '\f104';
+    }
+  }
+  &.slick-next {
+    right: 20px;
+    &:before {
+      content: '\f105';
+    }
+
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  li:not(:last-child) {
+    margin-right: 5px;
+  }
+  .slick-active {
+    button {
+      position: relative;
+      border-width: 2px;
+      &:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background-color: $default-dark;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 4px);
+        left: calc(50% - 4px);
+      }
+    }
+  }
+  button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $default-dark;
+    border-radius: 50%;
+    display: block;
+    background-color: transparent;
+    outline: none;
+
+    &:hover {
+      border-width: 2px;
+    }
+  }
+}
+.about {
+  padding: 100px 0;
+}
+.stack {
+  padding: 50px 0;
+  background-color: $light-grey;
+  &__item {
+    text-align: center;
+    padding: 40px;
+    display: block;
+    transition: 0.2s;
+    &:hover {
+      text-decoration: none;
+      box-shadow: 0 8px 22px -5px $light-grey-2;
+      background-color: white;
+    }
+    .stack__icon_wrap {
+      width: 80px;
+      line-height: 80px;
+      font-size: 40px;
+      border-radius: 50%;
+      margin: auto;
+      margin-bottom: 10px;
+      svg {
+        padding: 20px;
+      }
+    }
+    &.theme-red {
+      i, h3 {
+        color: $theme-red;
+      }
+      svg path {
+        fill: $theme-red;
+      }
+      .stack__icon_wrap {
+        background-color: $theme-red-light;
+      }
+    }
+    &.theme-blue {
+      i, h3 {
+        color: $theme-blue;
+      }
+      svg path {
+        fill: $theme-blue;
+      }
+      .stack__icon_wrap {
+        background-color: $theme-blue-light;
+      }
+    }
+    &.theme-green {
+      i, h3 {
+        color: $theme-green;
+      }
+      svg path  {
+        fill: $theme-green;
+      }
+      .stack__icon_wrap {
+        background-color: $theme-green-light;
+      }
+    }
+    &.theme-yellow {
+      i, h3 {
+        color: $theme-yellow;
+      }
+      svg path  {
+        fill: $theme-yellow;
+      }
+      .stack__icon_wrap {
+        background-color: $theme-yellow-light;
+      }
+    }
+    &.theme-purple {
+      i, h3 {
+        color: $theme-purple;
+      }
+      svg path  {
+        fill: $theme-purple;
+      }
+      .stack__icon_wrap {
+        background-color: $theme-purple-light;
+      }
+    }
+    &.theme-orange{
+      i, h3 {
+        color: $theme-orange;
+      }
+      svg path  {
+        fill: $theme-orange;
+      }
+      .stack__icon_wrap {
+        background-color: $theme-orange-light;
+      }
+    }
+  }
+}
+.projects {
+  padding: 100px 0;
+  .slick-track {
+    display: flex;
+  }
+  &__slide {
+    margin: 15px;
+    box-shadow: 0 5px 10px 0 $light-grey-1;
+    transition: 0.2s;
+    height: inherit;
+    & > a {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    img {
+      margin-bottom: 10px;
+    }
+    h3, p {
+      padding: 0 15px;
+    }
+    h3 {
+      color: $default-dark;
+    }
+    &:hover {
+      box-shadow: 0 5px 15px 5px $light-grey-1;
+    }
+    .btn-glued {
+      background-color: $light-grey-1;
+      color: $default-dark !important;
+    }
+  }
+  &__slides {
+    padding-bottom: 50px;
+    a:hover {
+      text-decoration: none;
+    }
+    .slick-arrow {
+      top: -50px;
+      &.slick-prev {
+        left: calc(100% - 116px);
+      }
+    }
+  }
+}
+.contact {
+  background-image: url(../images/satellite-map.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: $default-dark;
+  padding: 100px 0;
+  .form-horizontal {
+    input, textarea {
+      background-color: white;
+      border-radius: 0;
+      padding: 15px 10px;
+      box-shadow: none;
+      border: 2px solid $light-grey-1;
+      height: auto;
+      display: block;
+      width: 100%;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: $dark-grey;
+      background-clip: padding-box;
+      &::placeholder {
+        color: $light-grey-2;
+      }
+    }
+  }
+  p {
+    color: $mixed-grey;
+  }
+  .footer-social li a {
+    background-color: $default-light;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .about {
+    .btn-filled {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .head-sct {
+    height: 100vh;
+  }
+}

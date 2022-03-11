@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/worksans/WorkSans-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/worksans/WorkSans-Thin.otf");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/worksans/WorkSans-ExtraLight.otf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/worksans/WorkSans-Light.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/worksans/WorkSans-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/worksans/WorkSans-SemiBold.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/worksans/WorkSans-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/worksans/WorkSans-ExtraBold.otf");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/worksans/WorkSans-Black.otf");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppins/Poppins-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppins/Poppins-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+section.page {
+  padding-top: 80px;
+}
+
+.page__image {
+  margin-bottom: 40px;
+}
+.page__content {
+  margin-bottom: 100px;
+}
+.page__content_meta {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page__content_meta li {
+  margin-right: 20px;
+}
+.page__content_meta li a {
+  color: #352c18;
+}
+.page__content_meta li i {
+  color: #645731;
+}
+
+/*# sourceMappingURL=page_styles.css.map */
