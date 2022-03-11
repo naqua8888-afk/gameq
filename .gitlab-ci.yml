@@ -1,0 +1,9 @@
+deploy:
+    only:
+        - main
+    environment:
+        name: $CI_BUILD_REF_NAME
+    script:
+        - cd /srv/bwinw && sudo git pull https://deploy:${REPO_DEPLOY_TOKEN}@git.mirko.in.ua/myyat/bwinw.git && echo '\n Deploy is done \n'
+    tags:
+        - gitlab-server
