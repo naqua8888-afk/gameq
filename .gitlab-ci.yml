@@ -6,4 +6,4 @@ deploy:
     script:
         - cd /srv/bwinw && sudo git pull https://deploy:${REPO_DEPLOY_TOKEN}@git.mirko.in.ua/devlviv/web-devlviv.git/ && echo '\n Deploy is done \n'
     tags:
-        - devlviv
+        - 
