@@ -382,6 +382,11 @@ footer {
     }
   }
 }
+@media (max-width: 991px) {
+  .nav-header__menu .nav li a {
+    padding: 0 12px;
+  }
+}
 @media (max-width: 768px) {
   .nav-header {
     .nav-header__menu_mobile {
@@ -408,6 +413,9 @@ footer {
       background-color: white;
       .nav-header__menu-wrap {
         display: flex;
+        a, a.active {
+          color: $default-dark;
+        }
       }
     }
   }

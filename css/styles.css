@@ -310,6 +310,8 @@
 }
 .projects__slides {
   padding-bottom: 50px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .projects__slides a:hover {
   text-decoration: none;

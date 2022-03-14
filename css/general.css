@@ -438,6 +438,11 @@ footer {
   margin: 0;
 }
 
+@media (max-width: 991px) {
+  .nav-header__menu .nav li a {
+    padding: 0 12px;
+  }
+}
 @media (max-width: 768px) {
   .nav-header .nav-header__menu_mobile {
     display: block;
@@ -464,6 +469,9 @@ footer {
   }
   .nav-header.fold .nav-header__menu-wrap {
     display: flex;
+  }
+  .nav-header.fold .nav-header__menu-wrap a, .nav-header.fold .nav-header__menu-wrap a.active {
+    color: #352c18;
   }
 }
 .projects__slide img {
