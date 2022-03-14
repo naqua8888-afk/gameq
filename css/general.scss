@@ -1,5 +1,8 @@
 @import "variables";
 
+html {
+  scroll-behavior: smooth;
+}
 //----TEXT----
 h2 {
   font-family: 'Poppins', sans-serif;
@@ -396,6 +399,8 @@ footer {
       padding: 20px;
     }
     &__menu-wrap {
+      transform-origin:  top;
+      transform: scaleY(0);
       display: none;
       flex-direction: column;
       align-items: flex-start;
@@ -413,11 +418,16 @@ footer {
       background-color: white;
       .nav-header__menu-wrap {
         display: flex;
+        animation: translating 0.2s linear forwards;
         a, a.active {
           color: $default-dark;
         }
       }
     }
+  }
+  @keyframes translating {
+    0%   { transform: scaleY(0); }
+    100% { transform: scaleY(1); }
   }
 }
 

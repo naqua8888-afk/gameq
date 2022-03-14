@@ -64,6 +64,10 @@
   font-weight: 600;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 h2 {
   font-family: "Poppins", sans-serif;
   font-size: 32px;
@@ -451,6 +455,8 @@ footer {
     padding: 20px;
   }
   .nav-header__menu-wrap {
+    transform-origin: top;
+    transform: scaleY(0);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -469,9 +475,19 @@ footer {
   }
   .nav-header.fold .nav-header__menu-wrap {
     display: flex;
+    animation: translating 0.2s linear forwards;
   }
   .nav-header.fold .nav-header__menu-wrap a, .nav-header.fold .nav-header__menu-wrap a.active {
     color: #352c18;
+  }
+
+  @keyframes translating {
+    0% {
+      transform: scaleY(0);
+    }
+    100% {
+      transform: scaleY(1);
+    }
   }
 }
 .projects__slide img {
