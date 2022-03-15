@@ -219,6 +219,7 @@
 }
 .stack__item .stack__icon_wrap svg {
   padding: 20px;
+  width: 80px;
 }
 .stack__item.theme-red i, .stack__item.theme-red h3 {
   color: #ff4c4c;
