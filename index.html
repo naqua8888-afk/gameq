@@ -10,30 +10,36 @@
 <body>
 <div class="container">
     <div id="rounds-nav"></div>
-    <h1 id="question"></h1>
+    <h1 id="question" style="font-size: 5em; margin: 20px;"></h1>
+    <div class="" style="display: flex; gap: 50px; align-items: center">
+        <div class="" style="font-size: 1.4em">
+            <div>
+                <strong>Хлопці: <span id="score-boys">0</span></strong> |
+                <strong>Дівчата: <span id="score-girls">0</span></strong>
+            </div>
+            <div>
+                <span>Помилки хлопців: <span id="errors-boys">0</span></span> |
+                <span>Помилки дівчат: <span id="errors-girls">0</span></span>
+            </div>
+            <div>
+                Хід команди: <span id="turn"></span>
+            </div>
+        </div>
 
-    <div>
-        <strong>Хлопці: <span id="score-boys">0</span></strong> |
-        <strong>Дівчата: <span id="score-girls">0</span></strong>
-    </div>
-    <div>
-        <span>Помилки хлопців: <span id="errors-boys">0</span></span> |
-        <span>Помилки дівчат: <span id="errors-girls">0</span></span>
-    </div>
-    <div>
-        Хід команди: <span id="turn"></span>
-    </div>
+        <div class="">
+            <div id="start-choice" class="group-control" style="margin: 10px 0; display: flex; gap: 20px">
+                <button class="btn btn__secondary" id="start-boys">Починають хлопці</button>
+                <button class="btn btn__secondary" id="start-girls">Починають дівчата</button>
+            </div>
 
-    <div id="start-choice" style="margin: 10px 0;">
-        <button id="start-boys">Починають хлопці</button>
-        <button id="start-girls">Починають дівчата</button>
-    </div>
+            <div class="group-control">
+                <button id="mistake-btn" class="btn btn__primary">Помилка</button>
+                <button id="end-round-btn" class="btn btn__primary">Завершити раунд</button>
+            </div>
+        </div>
 
-    <div class="group-control">
-        <button id="mistake-btn" class="btn btn__primary">Помилка</button>
-        <button id="end-round-btn" class="btn btn__primary">Завершити раунд</button>
-    </div>
 
+    </div>
     <ul id="answers"></ul>
 </div>
 <script src="js/script.js"></script>

@@ -91,9 +91,12 @@ html {
   justify-content: center;
   align-items: center;
   font-family: "Nunito Sans", sans-serif;
-  margin: 0 40px;
+  margin: 60px 100px;
   gap: 12px;
   background: var(--greyLight-1);
+}
+.container h1 {
+  text-align: center;
 }
 
 .components {
@@ -740,6 +743,7 @@ html {
 .group-control .btn {
   border: none;
   font-family: "Nunito Sans";
+  font-size: 1.4em;
 }
 
 /*# sourceMappingURL=styles.css.map */
