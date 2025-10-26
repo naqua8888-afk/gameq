@@ -59,7 +59,7 @@ function renderScores() {
     document.getElementById('errors-boys').textContent = state.boysErrors;
     document.getElementById('errors-girls').textContent = state.girlsErrors;
     document.getElementById('turn').textContent = state.currentTurn
-        ? (state.currentTurn === 'boys' ? 'Хлопці' : 'Дівчата')
+        ? (state.currentTurn === 'boys' ? 'З досвідом' : 'З перспективою')
         : '—';
 
     // Прибираємо старі класи
