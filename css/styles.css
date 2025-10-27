@@ -21,14 +21,12 @@
 }
 
 body.boys-turn {
-  background-color: transparent;
-  /* світло-синій */
+  background-color: transparent; /* світло-синій */
   color: #0870d6;
 }
 
 body.girls-turn {
-  background-color: transparent;
-  /* світло-рожевий */
+  background-color: transparent; /* світло-рожевий */
   color: #da1578;
 }
 
@@ -86,7 +84,7 @@ html {
 
 .container {
   min-height: 100vh;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -513,6 +511,9 @@ html {
   font-family: inherit;
   color: var(--greyDark);
 }
+.form__input::-moz-placeholder {
+  color: var(--greyLight-3);
+}
 .form__input::placeholder {
   color: var(--greyLight-3);
 }
@@ -540,6 +541,9 @@ html {
   background: none;
   font-family: inherit;
   color: var(--greyDark);
+}
+.search__input::-moz-placeholder {
+  color: var(--greyLight-3);
 }
 .search__input::placeholder {
   color: var(--greyLight-3);
@@ -744,6 +748,4 @@ html {
   border: none;
   font-family: "Nunito Sans";
   font-size: 1.4em;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

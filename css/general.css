@@ -267,6 +267,9 @@ img {
   border-radius: 2px;
   outline: none;
 }
+.subscribe-form input::-moz-placeholder {
+  color: #fcf9f3;
+}
 .subscribe-form input::placeholder {
   color: #fcf9f3;
 }
@@ -480,7 +483,6 @@ footer {
   .nav-header.fold .nav-header__menu-wrap a, .nav-header.fold .nav-header__menu-wrap a.active {
     color: #352c18;
   }
-
   @keyframes translating {
     0% {
       transform: scaleY(0);
@@ -492,6 +494,4 @@ footer {
 }
 .projects__slide img {
   height: 200px;
-}
-
-/*# sourceMappingURL=general.css.map */
+}/*# sourceMappingURL=general.css.map */
