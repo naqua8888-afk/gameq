@@ -59,7 +59,7 @@ function renderScores() {
     document.getElementById('errors-boys').textContent = state.boysErrors;
     document.getElementById('errors-girls').textContent = state.girlsErrors;
     document.getElementById('turn').textContent = state.currentTurn
-        ? (state.currentTurn === 'boys' ? 'З досвідом' : 'З перспективою')
+        ? (state.currentTurn === 'boys' ? 'Хлопці' : 'Дівчата')
         : '—';
 
     // Прибираємо старі класи
@@ -77,7 +77,7 @@ function renderScores() {
 if (!number) {
     document.getElementById('question').textContent = 'Номер питання не вказано';
 } else {
-    fetch('js/data.json')
+    fetch('js/baiv.json')
         .then(response => response.json())
         .then(data => {
             renderRoundsNav(Object.keys(data).length);
@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Перевірка при завантаженні сторінки
     const savedPass = localStorage.getItem("pass");
-    if (savedPass === "gameq19") {
+    if (savedPass === "baiv15") {
       form.style.display = "none";
       container.style.display = "flex";
     }

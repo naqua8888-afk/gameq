@@ -21,12 +21,14 @@
 }
 
 body.boys-turn {
-  background-color: transparent; /* світло-синій */
+  background-color: transparent;
+  /* світло-синій */
   color: #0870d6;
 }
 
 body.girls-turn {
-  background-color: transparent; /* світло-рожевий */
+  background-color: transparent;
+  /* світло-рожевий */
   color: #da1578;
 }
 
@@ -276,7 +278,7 @@ html {
   grid-column: 1/2;
   grid-row: 5/6;
   color: var(--greyDark);
-  font-size: 1.6em;
+  font-size: 2.3em;
   border: none;
 }
 .btn__secondary:hover {
@@ -511,9 +513,6 @@ html {
   font-family: inherit;
   color: var(--greyDark);
 }
-.form__input::-moz-placeholder {
-  color: var(--greyLight-3);
-}
 .form__input::placeholder {
   color: var(--greyLight-3);
 }
@@ -541,9 +540,6 @@ html {
   background: none;
   font-family: inherit;
   color: var(--greyDark);
-}
-.search__input::-moz-placeholder {
-  color: var(--greyLight-3);
 }
 .search__input::placeholder {
   color: var(--greyLight-3);
@@ -748,4 +744,6 @@ html {
   border: none;
   font-family: "Nunito Sans";
   font-size: 1.4em;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
