@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космічний дашборд — Максимальний декор</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background: #050510 radial-gradient(circle at center, #1a1a4d 0%, #050510 100%);
+            color: white;
+            font-family: 'Arial Black', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* --- КОСМІЧНИЙ ФОН --- */
+        .space-canvas {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) translateX(0) rotate(0deg); }
+            50% { transform: translateY(-20px) translateX(10px) rotate(3deg); }
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        .decor { position: absolute; filter: drop-shadow(0 0 10px rgba(255,255,255,0.3)); }
+
+        /* Елементи з картинки */
+        .blue-planet { top: 5%; right: 5%; width: 120px; animation: float 15s infinite ease-in-out; }
+        .purple-planet { bottom: 25%; left: 3%; width: 80px; animation: float 12s infinite ease-in-out reverse; }
+        .yellow-saturn { top: 40%; right: 2%; width: 90px; animation: float 18s infinite ease-in-out; }
+        .big-shuttle { bottom: -10px; right: 30px; width: 150px; animation: float 5s infinite ease-in-out; }
+        .comet-main { top: 5%; left: 5%; width: 150px; transform: rotate(-15deg); opacity: 0.8; }
+        .small-rocket { top: 20%; left: 2%; width: 60px; animation: float 9s infinite ease-in-out; }
+        
+        /* Зірки */
+        .star { position: absolute; background: white; border-radius: 50%; animation: twinkle var(--d) infinite ease-in-out; }
+
+        /* --- ІНТЕРФЕЙС --- */
+        h1 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-bottom: 5px;
+            text-shadow: 0 0 20px #4da6ff;
+            display: flex;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .subtitle {
+            color: #80dfff;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            z-index: 10;
+        }
+
+        .team-container {
+            width: 100%;
+            max-width: 850px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 10;
+        }
+
+        .member-row {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 12px 30px;
+            border-radius: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            backdrop-filter: blur(8px);
+            transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .name-box {
+            width: 160px;
+            padding: 10px;
+            background: white;
+            color: #1a1a4d;
+            border-radius: 20px;
+            font-weight: 900;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow: 0 4px 0px rgba(0,0,0,0.2);
+        }
+
+        .battery-box {
+            flex-grow: 1;
+            margin: 0 25px;
+            height: 50px;
+            border: 4px solid white;
+            border-radius: 12px;
+            position: relative;
+            display: flex;
+            padding: 5px;
+            gap: 6px;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .battery-box::after {
+            content: "";
+            position: absolute;
+            right: -12px; top: 12px;
+            width: 8px; height: 26px;
+            background: white; border-radius: 0 4px 4px 0;
+        }
+
+        .segment { flex: 1; border-radius: 4px; background: #1a1a2e; transition: background 0.8s ease; }
+
+        .percent-display {
+            width: 110px;
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-align: right;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .revealed .percent-display { opacity: 1; }
+
+        /* Кольори з джерела */
+        .bg-red { background: #ff3333; box-shadow: 0 0 15px #ff3333; }
+        .bg-orange { background: #ff9933; box-shadow: 0 0 15px #ff9933; }
+        .bg-yellow { background: #ffff33; box-shadow: 0 0 15px #ffff33; }
+        .bg-lightgreen { background: #99ff33; box-shadow: 0 0 15px #99ff33; }
+        .bg-green { background: #33ff33; box-shadow: 0 0 15px #33ff33; }
+
+        .footer { margin-top: auto; padding: 20px; color: #4da6ff; font-weight: bold; text-transform: uppercase; z-index: 10; }
+    </style>
+</head>
+<body>
+
+    <div class="space-canvas" id="space-canvas">
+        <!-- Комета -->
+        <svg class="decor comet-main" viewBox="0 0 200 60">
+            <defs><linearGradient id="cGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="transparent"/><stop offset="100%" stop-color="#4da6ff"/></linearGradient></defs>
+            <path d="M0 30 L180 10 L180 50 Z" fill="url(#cGrad)" />
+            <circle cx="185" cy="30" r="12" fill="white" />
+        </svg>
+
+        <!-- Синя планета -->
+        <svg class="decor blue-planet" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="35" fill="#0099ff" />
+            <ellipse cx="50" cy="50" rx="55" ry="12" fill="none" stroke="#80dfff" stroke-width="4" transform="rotate(-25 50 50)" />
+        </svg>
+
+        <!-- Шатл -->
+        <svg class="decor big-shuttle" viewBox="0 0 100 150">
+            <path d="M50 10 L70 80 L70 130 L30 130 L30 80 Z" fill="white" />
+            <path d="M30 130 L50 150 L70 130 Z" fill="#ff9933" />
+            <rect x="35" y="130" width="30" height="15" fill="#ff4d4d" />
+        </svg>
+
+        <!-- Фіолетова планета -->
+        <circle class="decor purple-planet" cx="40" cy="40" r="40" fill="#9933ff" style="position:absolute;"/>
+    </div>
+
+    <h1>Рівень заряду за сьогодні</h1>
+    <p class="subtitle">МОЛОДЦІ! ВИ ЗАРЯДЖАЄТЕ СВІЙ ДЕНЬ НА 100%!</p>
+
+    <div class="team-container" id="container"></div>
+
+    <div class="footer">⚡ Разом ми — команда! ⚡</div>
+
+    <script>
+        const teams = [
+            { id: 1, name: "Команда 1", percent: 100, theme: "#4da6ff", revealed: false },
+            { id: 2, name: "Команда 2", percent: 80, theme: "#33ff33", revealed: false },
+            { id: 3, name: "Команда 3", percent: 60, theme: "#ffff33", revealed: false },
+            { id: 4, name: "Команда 4", percent: 40, theme: "#ff9933", revealed: false },
+            { id: 5, name: "Команда 5", percent: 20, theme: "#ff3333", revealed: false }
+        ];
+
+        // Генеруємо зірки як на фоні зображення
+        const canvas = document.getElementById('space-canvas');
+        for(let i=0; i<60; i++) {
+            const s = document.createElement('div');
+            s.className = 'star';
+            const size = Math.random() * 3 + 1;
+            s.style.width = size + 'px';
+            s.style.height = size + 'px';
+            s.style.left = Math.random() * 100 + '%';
+            s.style.top = Math.random() * 100 + '%';
+            s.style.setProperty('--d', (Math.random() * 3 + 2) + 's');
+            canvas.appendChild(s);
+        }
+
+        function render(animate = true) {
+            const container = document.getElementById('container');
+            const positions = new Map();
+            if (animate) {
+                container.querySelectorAll('.member-row').forEach(row => {
+                    positions.set(row.dataset.id, row.getBoundingClientRect().top);
+                });
+            }
+
+            const sorted = [...teams].sort((a, b) => {
+                if (a.revealed && b.revealed) return b.percent - a.percent;
+                if (a.revealed) return -1;
+                if (b.revealed) return 1;
+                return a.id - b.id;
+            });
+
+            container.innerHTML = '';
+            sorted.forEach(team => {
+                const row = document.createElement('div');
+                row.className = `member-row ${team.revealed ? 'revealed' : ''}`;
+                row.dataset.id = team.id;
+                
+                if (team.revealed) {
+                    row.style.borderColor = team.theme;
+                    row.style.boxShadow = `0 0 20px ${team.theme}66`;
+                }
+
+                row.onclick = () => {
+                    if (!team.revealed) {
+                        team.revealed = true;
+                        setTimeout(() => render(true), 300);
+                    }
+                };
+
+                let color = 'bg-green';
+                if (team.percent <= 20) color = 'bg-red';
+                else if (team.percent <= 40) color = 'bg-orange';
+                else if (team.percent <= 60) color = 'bg-yellow';
+                else if (team.percent <= 80) color = 'bg-lightgreen';
+
+                const segs = Math.ceil(team.percent / 20);
+                let segmentsHtml = '';
+                for (let i = 0; i < 5; i++) {
+                    segmentsHtml += `<div class="segment ${team.revealed && i < segs ? color : ''}"></div>`;
+                }
+
+                row.innerHTML = `
+                    <div class="name-box" style="background: ${team.revealed ? team.theme : 'white'}">${team.name}</div>
+                    <div class="battery-box">${segmentsHtml}</div>
+                    <div class="percent-display" style="color: ${team.revealed ? getHex(color) : 'white'}">${team.percent}%</div>
+                `;
+
+                container.appendChild(row);
+
+                if (animate && positions.has(String(team.id))) {
+                    const oldTop = positions.get(String(team.id));
+                    const newTop = row.getBoundingClientRect().top;
+                    const delta = oldTop - newTop;
+                    if (delta !== 0) {
+                        row.style.transition = 'none';
+                        row.style.transform = `translateY(${delta}px)`;
+                        requestAnimationFrame(() => {
+                            row.style.transition = 'transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                            row.style.transform = 'translateY(0)';
+                        });
+                    }
+                }
+            });
+        }
+
+        function getHex(c) {
+            const m = { 'bg-red': '#ff3333', 'bg-orange': '#ff9933', 'bg-yellow': '#ffff33', 'bg-lightgreen': '#99ff33', 'bg-green': '#33ff33' };
+            return m[c] || 'white';
+        }
+
+        render(false);
+    </script>
+</body>
+</html>
